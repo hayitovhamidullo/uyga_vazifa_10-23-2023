@@ -49,4 +49,36 @@ cookies.style.height =
 
 document
   .querySelector('.btn--close-cookie')
-  .addEventListener('click', () => cookie.remove());
+  .addEventListener('click', () => cookies.remove() );
+
+  // scrol claslari
+  const btnScrollTo = document.querySelector('.btn--scroll-to');
+  const sectionl = document.querySelector('#section--1');
+
+  // scrol funksiyasi 
+  btnScrollTo.addEventListener('click', (e) => {
+    e.preventDefault();
+    sectionl.scrollIntoView();
+    // console.log(btnScrollTo);
+  });
+
+  const colorGenerator = () => {
+    return `rgb(
+      ${Math.trunc(Math.random() * 256 + 1)},
+      ${Math.trunc(Math.random() * 256 + 1)},
+      ${Math.trunc(Math.random() * 256 + 1)}
+    )`;
+  };
+  // console.log(colorGenerator);
+  
+  const navLink = document.querySelector('.nav__links');
+  navLink.addEventListener('click', function (e){
+    e.preventDefault();
+    if(e.target.classList.contains('.nav__links')){
+       console.log(e.target);
+
+       const sectionName = e.target.getAttribute('href');
+       document.querySelector(sectionName).scrollIntoView({behavior: `smooth`});
+    }
+
+  });
