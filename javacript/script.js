@@ -7,12 +7,12 @@ const btnsOpenModal = document.querySelectorAll(".btn--show-modal");
 const btnScrollTo = document.querySelector(".btn--scroll-to");
 const section1 = document.querySelector("#section--1");
 const nav = document.querySelector(".nav");
-const cookie = document.querySelector(".cookie button");
+// const cookies = document.querySelector(".cookies button");
 
-// cookie
-cookie.addEventListener("click", () => {
-  document.querySelector(".cookie").remove();
-});
+// // cookies
+// cookies.addEventListener("click", () => {
+//   document.querySelector(".cookies").remove();
+// });
 
 // for Modal
 const ModalOpen = function (e) {
