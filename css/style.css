@@ -13,7 +13,7 @@
   --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
-* {
+cookie * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
