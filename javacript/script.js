@@ -28,7 +28,7 @@ cookies.style.height =
 
 document
   .querySelector('.btn--close-cookie')
-  .addEventListener('click', () => cookie.remove());
+  .addEventListener('click', () => cookies.remove());
 
 // for Modal
 const ModalOpen = function (e) {
